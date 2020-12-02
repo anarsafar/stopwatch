@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch app a vanilla JS</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: #aaa;
+      }
+      .card-text {
+        font-size: 25px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card text-center col col-md-8 mx-auto mt-4 rounded">
+      <div class="card-header">app by me</div>
+      <div class="card-body">
+        <h4 class="card-title">Stopwatch app a Vanilla Javascript</h4>
+        <div class="card-text my-5" id="content">00:00:00:00</div>
+        <a href="#" class="btn btn-success mx-1" id="start-btn">start</a>
+        <a href="#" class="btn btn-secondary mx-1" id="pause-btn">pause</a>
+        <a href="#" class="btn btn-warning mx-1" id="lap-btn">lap</a>
+        <a href="#" class="btn btn-primary mx-1" id="reset-lap"> reset lap</a>
+        <a href="#" class="btn btn-danger mx-1" id="stop-btn">stop</a>
+      </div>
+      <!--Lap div-->
+      <div class="card-footer text-muted">
+        laps
+        <div id="laps"></div>
+      </div>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
